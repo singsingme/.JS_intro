@@ -5,31 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
     <div class="alert-box" id="alert">
-        알림창임
-        <button onclick="document.getElementById('alert').style.display = 'none'">
-            닫기
-        </button>
+        <p>알림창임</p>
+        <button onclick="알림창열기('none')">닫기</button>
     </div>
-    <button onclick="알림창열기()">
-        버튼
-    </button>
+    <button onclick="알림창열기('block')">버튼1</button>
+    <button onclick="알림창열기('block')">버튼2</button>
 
     <script>
-        // document.getElementById('alert').style.display = 'none';
 
 
-        function 알림창열기(){
-            document.getElementById('alert').style.display = 'block'
+
+        function 알림창열기(구멍){
+            document.getElementById('alert').style.display = 구멍;
         }
 
-
-
+        // 버튼1 누르면 아이디입력하세요
+        // 버튼2 누르면 비번입력하세요
     </script>
 
 </body>
