@@ -11,22 +11,44 @@
 
 
     <div class="alert-box" id="alert">
-        <p>알림창임</p>
-        <button onclick="알림창열기('none')">닫기</button>
+        <p id="title">알림창임</p>
+        <button id="close">닫기</button>
     </div>
-    <button onclick="알림창열기('block')">버튼1</button>
-    <button onclick="알림창열기('block')">버튼2</button>
+    <button onclick="아이디알림창()">버튼1</button>
+    <button onclick="비번알림창()">버튼2</button>
 
     <script>
 
-
+        document.getElementId('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = none;
+        });
 
         function 알림창열기(구멍){
             document.getElementById('alert').style.display = 구멍;
         }
 
+
+
+
         // 버튼1 누르면 아이디입력하세요
         // 버튼2 누르면 비번입력하세요
+        function 아이디알림창(){
+            //1. p태그 내용을 아이디입력으로 바꿈
+            document.getElementById('title').innerHTML = '아이디입력하셈';
+            //2. 띄움
+            document.getElementById('alert').style.display = block;
+        }
+        function 비번알림창(){
+            //1. p태그 내용을 아이디입력으로 바꿈
+            document.getElementById('title').innerHTML = '비번입력하셈';
+            //2. 띄움
+            document.getElementById('alert').style.display = block;
+        }
+
+
+        
+
+
     </script>
 
 </body>
