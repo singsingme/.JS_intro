@@ -1,14 +1,14 @@
-.alert-box {
+/* .alert-box {
   background-color: skyblue;
   padding: 20px;
   color: white;
   border-radius: 5px;
   display: none;
-} 
+}  */
 
 .list-group {
-  display : none
+  display : none;
 }
 .show {
-  display : block
+  display : block;
 }
